@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    font-family: 'Lobster', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+
+body{
+    background-color: rgb(173, 216, 230);
+}
+
+h1{
+    width: 100%;
+    text-align: center;
+    font-size: 100px;
+    color: white;
+    margin: 30px 0 30px 0;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form{
+    width: 20%;    
+    height: 200px;
+    float: left;
+    margin: 20px 2.5% 0 2.5%  ;
+    background-size: contain;
+    position: relative;
+}
+
+.pattern{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: white;
+    position: relative;
+    display: none;
+}
+
+h2{
+    display: none;
+    position: relative;
+    bottom: 35px;
+    left: 50%;
+}
+.form.active h2 ,
+.form.active .image
+{
+    display: inline-block;
+
+}
+.form:hover h2{
+    display: inline-block;
+}
+
+.form:hover img{
+    display: inline-block;
+}
+
+.balloon + h2{
+    color: orange;
+}
+
+.submarine + h2{
+    color: aqua;
+}
+
+.cruiseship + h2{
+    color: blue;
+}
+
+.tractor + h2{
+    color: brown;
+}
+
+.tram + h2{
+    color: chocolate;
+}
+
+.bicycle + h2{
+    color: darkgreen;
+}
+
+footer{
+    text-align: center;
+    height: 100PX;
+    line-height: 100PX;
+}
